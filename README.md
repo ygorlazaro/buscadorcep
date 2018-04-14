@@ -46,7 +46,7 @@ Como o serviço retorna uma Promise, é possível utilizar encadeamento de `.the
 buscadorcep('21235280')
     .then(response => response.data)
     .then(endereco => console.log(endereco));
-    
+```    
 
 # Roadmap
 

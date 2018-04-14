@@ -1,5 +1,7 @@
 # buscadorcep
 
+## Status de testing: ![](https://travis-ci.org/ygorlazaro/buscadorcep.svg?branch=master)
+
 Ferramenta de pesquisa de cep para node e JavaScript client-side. Utiliza como backend a API do ViaCEP.
 
 Como desenhado até o momento, a biblioteca é compatível com qualquer framework front-end, como React, React Native, Vue.JS, Angular e AngularJS.

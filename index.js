@@ -1,3 +1,3 @@
-const cepfinder = require('./services/viaCep');
+const buscadorcep = require('./services/viaCep');
 
-module.exports = cepfinder;
+module.exports = buscadorcep;

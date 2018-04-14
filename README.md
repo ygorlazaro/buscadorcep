@@ -1,4 +1,4 @@
-# cepfinder
+# buscadorcep
 
 Ferramenta de pesquisa de cep para node e JavaScript client-side. Utiliza como backend a API do ViaCEP.
 
@@ -8,18 +8,18 @@ Como desenhado até o momento, a biblioteca é compatível com qualquer framewor
 
 Instale o componente:
 
-`npm install cepfinder`
+`npm install buscadorcep`
 
 O componente exporta uma função que retorna um endereço recebendo um cep como parâmetro:
 
 ```
 //Node.JS
-const cepfinder = require('cepfinder');
+const buscadorcep = require('buscadorcep');
 
 //ES6
-//import cepfinder = require('cepfinder');
+//import buscadorcep = require('buscadorcep');
 
-const endereco = await cepfinder('21235280');
+const endereco = await buscadorcep('21235280');
 
 console.log(endereco.data);
 
@@ -43,7 +43,7 @@ retorno:
 Como o serviço retorna uma Promise, é possível utilizar encadeamento de `.then()` e `.catch()`;
 
 ```
-cepfinder('21235280')
+buscadorcep('21235280')
     .then(response => response.data)
     .then(endereco => console.log(endereco));
     

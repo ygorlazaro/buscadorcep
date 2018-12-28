@@ -26,7 +26,7 @@ const viaCep = async cep => {
     }
 
     const cleanCep = cep.replace('-', '');
-    const url = `https://viacep.com.br/ws/${cep}/json/`;
+    const url = `https://viacep.com.br/ws/${cleanCep}/json/`;
 
     return axios.get(url);
 };

@@ -1,5 +1,4 @@
-// @ts-nocheck
-const axios = require('axios');
+const fetch = require('node-fetch');
 
 /**
  * @typedef Endereco
@@ -18,7 +17,7 @@ const axios = require('axios');
  * Busca um endereço a partir de um CEP
  * 
  * @param {string} cep 
- * @returns {Promise<AxiosResponse<Endereco>>}
+ * @returns {Promise<Endereco>}
  */
 const viaCep = async cep => {
     if (!cep) {
@@ -28,7 +27,9 @@ const viaCep = async cep => {
     const cleanCep = cep.replace('-', '');
     const url = `https://viacep.com.br/ws/${cleanCep}/json/`;
 
-    return axios.get(url);
+    const response = await fetch(url);
+
+    return response.json();
 };
 
 module.exports = viaCep;

@@ -17,9 +17,8 @@ const viaCep = require('../../services/viaCep')
 test('busca um cep válido', async () => {
     const cep = '21235280';
 
-    const response = await viaCep(cep);
     /** @type {Endereco} */
-    const endereco = response.data;
+    const endereco = await viaCep(cep);
 
     expect(endereco).toBeDefined();
     expect(endereco.cep).toBe('21235-280');

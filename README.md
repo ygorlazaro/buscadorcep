@@ -6,6 +6,13 @@ Ferramenta de pesquisa de cep para node e JavaScript client-side. Utiliza como b
 
 Como desenhado até o momento, a biblioteca é compatível com qualquer framework front-end, como React, React Native, Vue.JS, Angular e AngularJS.
 
+## Ajude o projeto! https://github.com/ygorlazaro/buscadorcep
+
+# Versão 2.0.0
+
+- Melhoria de velocidade
+- Breaking change: `axios` removido como dependência, o retorno do método agora não tem mais o "envelope" `AxiosResponse`
+
 # Como utilizar
 
 Instale o componente:
@@ -23,7 +30,7 @@ const buscadorcep = require('buscadorcep');
 
 const endereco = await buscadorcep('21235280');
 
-console.log(endereco.data);
+console.log(endereco);
 
 /*
 retorno:
@@ -46,11 +53,6 @@ Como o serviço retorna uma Promise, é possível utilizar encadeamento de `.the
 
 ```
 buscadorcep('21235280')
-    .then(response => response.data)
+    .then(response => response)
     .then(endereco => console.log(endereco));
 ```    
-
-# Roadmap
-
-* Componente visual para React
-* Diretiva de Vue.JS

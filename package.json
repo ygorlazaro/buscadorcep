@@ -1,6 +1,6 @@
 {
     "name": "buscadorcep",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "Ferramenta de pesquisa de CEP para node e client-side",
     "main": "index.js",
     "scripts": {
@@ -19,9 +19,9 @@
     "author": "Ygor Lazaro",
     "license": "MIT",
     "devDependencies": {
-        "jest": "^24.5.0"
+        "jest": "^24.9.0"
     },
     "dependencies": {
-        "node-fetch": "^2.3.0"
+        "node-fetch": "^2.6.0"
     }
 }

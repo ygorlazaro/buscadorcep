@@ -19,9 +19,9 @@
     "author": "Ygor Lazaro",
     "license": "MIT",
     "devDependencies": {
-        "jest": "^26.0.1"
+        "jest": "^26.4.2"
     },
     "dependencies": {
-        "node-fetch": "^2.6.0"
+        "node-fetch": "^2.6.1"
     }
 }

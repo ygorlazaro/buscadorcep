@@ -1,3 +1,3 @@
-const buscadorcep = require('./services/viaCep');
+import buscadorcep from './services/viaCep';
 
-module.exports = buscadorcep;
+export default buscadorcep;

@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 
 /**
  * @typedef Endereco
@@ -32,4 +32,4 @@ const viaCep = async cep => {
     return response.json();
 };
 
-module.exports = viaCep;
+export default viaCep;
